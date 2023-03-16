@@ -5,15 +5,15 @@ An easy to use image zoom lens library for Vue.js 3
 ## Installation
 
 ```shell
-npm install --save vue-mark-image
+npm install --save vue-pin-image
 
 or
 
-yarn add vue-mark-image
+yarn add vue-pin-image
 
 or
 
-pnpm i vue-mark-image
+pnpm i vue-pin-image
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ pnpm i vue-mark-image
 ### Import the magic zoom componet.
 
 ```
-import { MagicZoom } from "vue-mark-image"
+import { MagicZoom } from "vue-pin-image"
 ```
 
 ### Use it in a Vue componens

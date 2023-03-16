@@ -18,9 +18,9 @@ export default defineConfig({
     lib: {
       // Could also be a dictionary or array of multiple entry points
       entry: resolve(__dirname, 'lib/main.ts'),
-      name: 'VueMagicZoom',
+      name: 'VuePinImage',
       // the proper extensions will be added
-      fileName: (format) => `vue-mark-image.${format}.js`,
+      fileName: (format) => `vue-pin-image.${format}.js`,
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled

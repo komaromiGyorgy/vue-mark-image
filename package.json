@@ -1,6 +1,6 @@
 {
-  "name": "vue-mark-image",
-  "version": "0.0.1",
+  "name": "vue-pin-image",
+  "version": "0.0.2",
   "private": false,
   "description": "🔎 Easy to use image marker library for vue3",
   "author": "Komi <komi@yorgsoft.com>",
@@ -15,11 +15,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/komaromiGyorgy/vue-mark-image"
+    "url": "https://github.com/komaromiGyorgy/vue-pin-image"
   },
   "bugs": {
     "email": "komi@yorgsoft.com",
-    "url": "https://github.com/komaromiGyorgy/vue-mark-image/issues"
+    "url": "https://github.com/komaromiGyorgy/vue-pin-image/issues"
   },
   "contributors": [
     "Komi <komi@yorgsoft.com>",
@@ -38,13 +38,13 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/vue-mark-image.umd.cjs",
-  "module": "./dist/vue-mark-image.es.js",
+  "main": "./dist/vue-pin-image.umd.cjs",
+  "module": "./dist/vue-pin-image.es.js",
   "types": "./dist/lib/main.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/vue-mark-image.es.js",
-      "require": "./dist/vue-mark-image.umd.cjs"
+      "import": "./dist/vue-pin-image.es.js",
+      "require": "./dist/vue-pin-image.umd.cjs"
     }
   },
   "scripts": {

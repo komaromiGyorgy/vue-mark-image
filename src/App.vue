@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, watchEffect } from 'vue';
-import MarkImage from './components/MarkImage.vue'
+import PinImage from './components/PinImage.vue'
 
 const markers = ref([]);
 watchEffect(() => {
@@ -9,6 +9,6 @@ watchEffect(() => {
 </script>
 
 <template>
-  <MarkImage v-model:markers="markers" width="1600" height="1067"
+  <PinImage v-model:markers="markers" width="1600" height="1067"
     src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Goat_face.jpg" />
 </template>
