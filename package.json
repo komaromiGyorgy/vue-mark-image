@@ -1,6 +1,6 @@
 {
   "name": "vue-pin-image",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "description": "🔎 Easy to use image marker library for vue3",
   "author": "Komi <komi@yorgsoft.com>",
