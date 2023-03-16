@@ -9,17 +9,17 @@
     "marker",
     "image marker",
     "vue image marker",
-    "vue 3 image marker",
+    "vue 3 image marker", 
     "vue 3 marker",
     "vue marker"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/komaromiGyorgy/vue-pin-image"
+    "url": "https://github.com/komaromiGyorgy/vue-mark-image"
   },
   "bugs": {
     "email": "komi@yorgsoft.com",
-    "url": "https://github.com/komaromiGyorgy/vue-pin-image/issues"
+    "url": "https://github.com/komaromiGyorgy/vue-mark-image/issues"
   },
   "contributors": [
     "Komi <komi@yorgsoft.com>",
