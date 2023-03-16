@@ -1,6 +1,6 @@
-# 🔎 Vue Magic Zoom
+# 📌 Vue Pin Image
 
-An easy to use image zoom lens library for Vue.js 3
+An easy to use image marker library for vue3
 
 ## Installation
 
@@ -20,14 +20,19 @@ pnpm i vue-pin-image
 
 ### Import the magic zoom componet.
 
-```
-import { MagicZoom } from "vue-pin-image"
+```js
+import { PinImage } from "vue-pin-image"
 ```
 
 ### Use it in a Vue componens
 
 ```js
-<MagicZoom src="/default-image.jpg" />
+const markers = ref([]);
+watchEffect(() => {
+    console.log(markers.value);
+})
+
+<PinImage src="/default-image.jpg" v-model:markers="markers" />
 ```
 
 This will render the image and when you hover over it, it will show a little lens with a zoomed in version
@@ -36,15 +41,8 @@ This will render the image and when you hover over it, it will show a little len
 
 | Prop        | Type             | Default        | Description                                                                                                                             |
 | ----------- | ---------------- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| src         | String           | -              | Required. This is the path to the image that you want to have the ability to zoom on.                                                   |
-| zoomScale   | Number           | 4              | Optional. This Prop is used to determin the magnification scale of the magnifing lens.                                                  |
-| aspectRatio | Number           | 16/9           | Otpional. This can be provided as a fraction like: `16/9`                                                                               |
-| fit         | String           | `contain`      | Otpional. Determines aspect ratio of image                                                                                              |
-| lensSize    | Number           | 200            | Optional. Size of lens in pixels, lens will be a square                                                                                 |
-| width       | Number`\|`String | `100%`         | Optional. Determines width of image                                                                                                     |
-| height      | Number`\|`String | `100%`         | Optional. Determines height of image                                                                                                    |
-| alt         | String           | `Zoomed Image` | Optional. alt of image                                                                                                                  |
-| modifier    | String           | ''             | Optional. KeyCode of a KeyboardEvent (ex.:`ControlLeft`) this will make it so that the lens only appears if the modifier key is pressed |
+| markers         | Array[{ x: number, y: number }]| - | Required. This will store all your markers                                                  |
+| disable   | Boolean           | false              | Optional. This prop makes the pins disabled and removes pointer events.                                                  |
 
 ## Support
 
